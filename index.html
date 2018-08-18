@@ -24,12 +24,22 @@
       <div class="page-header clear-filter" filter-color="orange">
         <div class="page-header-image" data-parallax="true" style="background-image:url('./assets/img/test.jpg');">
         </div>
-
         <div class="container">
+          <h1 class="text-center my-4">Sathvik Koneru</h2>
+          <p class="text-center font-weight-normal pt-0.5">UMich '22 | Computer Science</p>
+        </div>
+        <!-- circle profile>
+        <div class="container">
+          <img src="assets/img/prof.jpg" class="rounded-circle">
+          <h1 class="my-2">Sathvik Koneru</h1>
+          <p class="mt-0.25">UMich '22 | Computer Science</p>
+        </div>
+        <div class="container">
+        <!-- /circle profile -->
           <!-- navbar -->
           <nav class="navbar navbar-expand-lg bg-primary fixed-top navbar-transparent" color-on-scroll="400">
             <div class="container">
-              <a class="navbar-brand" href="#">Sathvik Koneru</a>
+              <a class="navbar-brand" href="#">SK</a>
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -42,10 +52,7 @@
                     <a class="nav-link" href="#about">About</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#skills">Skills</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#projects">Projects</a>
+                    <a class="nav-link" href="#skills">Skills and Projects</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#contact">Contact</a>
@@ -55,66 +62,110 @@
             </div>
           </nav>
           <!-- /navbar-->
-
-          <h2>Hey there!</h2>
-
         </div>
       </div>
     </div>
 
     <!-- About Me --->
-    <div id="about" class="container my-3">
+    <div id="about" class="container mt-5 pt-5">
       <h1 class="pt-5">About Me</h1>
       <p>Insert text.</p>
-      <a  title="Follow us on Twitter" href="https://twitter.com/" target="_blank">
+      <a title="Follow us on Twitter" href="https://twitter.com/" target="_blank">
         <i class="fab fa-twitter"></i>
         <p class="d-lg-none d-xl-none">Twitter</p>
       </a>
 
+
     </div>
     <!-- /About Me -->
 
-    <!-- skills --->
-    <div id="skills" class="container my-3">
-      <h1>Skills</h1>
+    <!-- skills and projects--->
+    <div class="section section-tabs">
+      <div class="container">
+        <h1>Skills and Projects</h1>
         <div class="row">
-          <div class="col-sm">
-            Data Science/AI
-            <img src="assets/img/python.png" class="mb-4 img-fluid rounded d-none d-sm-block" alt="Python">
+          <div class="col-md-10 ml-auto col-xl-6 mr-auto">
+            <!-- Nav tabs -->
+            <div class="card">
+              <div class="card-header">
+                <ul class="nav nav-tabs justify-content-center" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" data-toggle="tab" href="#home" role="tab">
+                      <i class="now-ui-icons objects_umbrella-13"></i> Data Science/AI
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#webdev" role="tab">
+                      <i class="now-ui-icons shopping_cart-simple"></i> Web Development
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#ios" role="tab">
+                      <i class="now-ui-icons shopping_shop"></i> iOS Development
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#other" role="tab">
+                      <i class="now-ui-icons ui-2_settings-90"></i> Other
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="card-body">
+                <!-- Tab panes -->
+                <div class="tab-content text-center">
+                  <div class="tab-pane active" id="home" role="tabpanel">
+                    <p>python numpy pandas matplotlib scikit-learn</p>
+                  </div>
+                  <div class="tab-pane" id="webdev" role="tabpanel">
+                    <p> HTML CSS JavaScript Node.js Bootstrap Learning.
+                      Projects: this website
+                    </p>
+                  </div>
+                  <div class="tab-pane" id="ios" role="tabpanel">
+                    <p>iOS apps. iFall, Hearth</p>
+                  </div>
+                  <div class="tab-pane" id="other" role="tabpanel">
+                    <p>Debate. Public Speaking.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="col-sm">
-            Web Development
-          </div>
-          <div class="col-sm">
-            Other
-          </div>
-        </div>
-    </div>
-    <!-- /skills -->
-
-    <!-- Projects -->
-    <div id="projects" class="container my-3">
-      <h1>Projects</h1>
-      <div class="row">
-        <div class="col-sm">
-          One of three columns
-        </div>
-        <div class="col-sm">
-          One of three columns
-        </div>
-        <div class="col-sm">
-          One of three columns
         </div>
       </div>
     </div>
-    <!-- /Projects -->
+    <!-- /skills and projects -->
+
 
     <!-- Contact Me -->
     <div id="contact" class="container my-5">
       <h1>Contact Me</h1>
+      <form>
+        <div class="form-group">
+          <label>Email Address</label>
+          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        </div>
+        <div class="form-group">
+          <label>Name</label>
+          <input type="text" class="form-control" placeholder="Full name"></input>
+        </div>
+        <div class="form-group">
+          <label>Message</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Enter here"></textarea>
+        </div>
+        <button type="button" class="btn btn-primary">Send</button>
+      </form>
     </div>
     <!-- /Contact Me -->
 
+    <!-- Footer -->
+    <footer class="footer" data-background-color="black">
+      <div class="container">
+        Built by Sathvik Koneru with Bootstrap and the Now UI Kit.
+      </div>
+    </footer>
+    <!-- /Footer -->
 
 
     <!--   Core JS Files   -->
