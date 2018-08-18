@@ -15,18 +15,48 @@
     <!-- CSS Files -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet"/>
     <link href="assets/css/now-ui-kit.css?v=1.2.0" rel="stylesheet"/>
-
   </head>
 
-  <body>
+  <body class="index-page sidebar-collapse">
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg-primary fixed-top navbar-transparent" color-on-scroll="400">
+      <div class="container">
+        <div class="navbar-translate">
+          <a class="navbar-brand" href="#">SK</a>
+          <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-bar top-bar"></span>
+            <span class="navbar-toggler-bar middle-bar"></span>
+            <span class="navbar-toggler-bar bottom-bar"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills and Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- /navbar -->
 
+    <!-- home background -->
     <div id="home" class="wrapper">
       <div class="page-header clear-filter" filter-color="orange">
         <div class="page-header-image" data-parallax="true" style="background-image:url('./assets/img/test.jpg');">
         </div>
         <div class="container">
           <h1 class="text-center my-4">Sathvik Koneru</h2>
-          <p class="text-center font-weight-normal pt-0.5">UMich '22 | Computer Science</p>
+          <p class="text-center font-weight-light pt-0.5">UMich '22 | Computer Science</p>
         </div>
         <!-- circle profile>
         <div class="container">
@@ -36,53 +66,25 @@
         </div>
         <div class="container">
         <!-- /circle profile -->
-          <!-- navbar -->
-          <nav class="navbar navbar-expand-lg bg-primary fixed-top navbar-transparent" color-on-scroll="400">
-            <div class="container">
-              <a class="navbar-brand" href="#">SK</a>
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                  <li class="nav-item active">
-                    <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#about">About</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#skills">Skills and Projects</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
-          <!-- /navbar-->
-        </div>
       </div>
     </div>
+    <!-- /home background -->
 
     <!-- About Me --->
-    <div id="about" class="container mt-5 pt-5">
-      <h1 class="pt-5">About Me</h1>
-      <p>Insert text.</p>
-      <a title="Follow us on Twitter" href="https://twitter.com/" target="_blank">
-        <i class="fab fa-twitter"></i>
-        <p class="d-lg-none d-xl-none">Twitter</p>
-      </a>
-
-
-    </div>
+      <div id="about" class="container">
+        <h1 class="pt-5 font-weight-bold">About Me</h1>
+        <i class="now-ui-icons education_hat"></i>
+        Freshman studying Computer Science at Umich.
+        <p> Interested in machine Learning
+        and AI and how it can be applied to healthcare.
+        [Linkedin/Medium/Email/Github]</p>
+      </div>
     <!-- /About Me -->
 
     <!-- skills and projects--->
     <div class="section section-tabs">
       <div class="container">
-        <h1>Skills and Projects</h1>
+        <h1 class="font-weight-bold">Skills and Projects</h1>
         <div class="row">
           <div class="col-md-10 ml-auto col-xl-6 mr-auto">
             <!-- Nav tabs -->
@@ -90,23 +92,23 @@
               <div class="card-header">
                 <ul class="nav nav-tabs justify-content-center" role="tablist">
                   <li class="nav-item">
-                    <a class="nav-link active" data-toggle="tab" href="#home" role="tab">
-                      <i class="now-ui-icons objects_umbrella-13"></i> Data Science/AI
+                    <a class="nav-link active" data-toggle="tab" href="#data" role="tab">
+                      <i class="now-ui-icons design_vector"></i> Data Science/AI
                     </a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" data-toggle="tab" href="#webdev" role="tab">
-                      <i class="now-ui-icons shopping_cart-simple"></i> Web Development
+                      <i class="now-ui-icons tech_laptop"></i> Web Development
                     </a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" data-toggle="tab" href="#ios" role="tab">
-                      <i class="now-ui-icons shopping_shop"></i> iOS Development
+                      <i class="now-ui-icons tech_mobile"></i> iOS Development
                     </a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" data-toggle="tab" href="#other" role="tab">
-                      <i class="now-ui-icons ui-2_settings-90"></i> Other
+                      <i class="now-ui-icons business_globe"></i> Other
                     </a>
                   </li>
                 </ul>
@@ -114,8 +116,22 @@
               <div class="card-body">
                 <!-- Tab panes -->
                 <div class="tab-content text-center">
-                  <div class="tab-pane active" id="home" role="tabpanel">
+                  <div class="tab-pane active" id="data" role="tabpanel">
+                    <div class="row">
+                      <div class="column">
+                        <img align="left" src="assets/img/python_logo.png" alt="python" style="width:225px;height:100px;">
+                      </div>
+                      <div class="column">
+                        <img align="middle" src="assets/img/numpy_logo.png" alt="numpy" style="width:250px;height:200px;">
+                      </div>
+                      <div class="column">
+                        <img align="right" src="assets/img/pandas_logo.png" alt="pandas" style="width:250px;height:200px;">
+                      </div>
+                    </div>
                     <p>python numpy pandas matplotlib scikit-learn</p>
+
+                    <img src="assets/img/matplot_logo.png">
+                    <img src="assets/img/scikit_logo.png">
                   </div>
                   <div class="tab-pane" id="webdev" role="tabpanel">
                     <p> HTML CSS JavaScript Node.js Bootstrap Learning.
@@ -139,25 +155,28 @@
 
 
     <!-- Contact Me -->
-    <div id="contact" class="container my-5">
-      <h1>Contact Me</h1>
-      <form>
-        <div class="form-group">
-          <label>Email Address</label>
-          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-        </div>
-        <div class="form-group">
-          <label>Name</label>
-          <input type="text" class="form-control" placeholder="Full name"></input>
-        </div>
-        <div class="form-group">
-          <label>Message</label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Enter here"></textarea>
-        </div>
-        <button type="button" class="btn btn-primary">Send</button>
-      </form>
+    <div class="section section-signup" style="background-image: url('assets/img/bg11.jpg'); background-size: cover; background-position: top center; min-height: 700px;">
+      <div id="contact" class="container my-5">
+        <h1 class="text-light font-weight-bold">Contact Me</h1>
+        <form>
+          <div class="form-group">
+            <label class="text-light">Email Address</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+          </div>
+          <div class="form-group">
+            <label class="text-light">Name</label>
+            <input type="text" class="form-control" placeholder="Full name"></input>
+          </div>
+          <div class="form-group">
+            <label class="text-light">Message</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Enter here"></textarea>
+          </div>
+          <button type="button" class="btn btn-primary">Send</button>
+        </form>
+      </div>
     </div>
     <!-- /Contact Me -->
+
 
     <!-- Footer -->
     <footer class="footer" data-background-color="black">
