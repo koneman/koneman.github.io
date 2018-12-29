@@ -7,6 +7,34 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+
+
+#resume{
+	margin-bottom: 2em;
+	margin-left: 2em;
+}
+
+#resume-content{
+	font-size: 100%;
+	/* margin-right: 12em; */
+}
+
+#proj{
+	/* margin-right: 18em; */
+	font-size: 100%;
+}
+
+#projects{
+	margin-bottom: 2em;
+}
+
+
+@media only screen and (max-width: 512px) {
+    #proj {
+        display: none;
+    }
+}
+
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
